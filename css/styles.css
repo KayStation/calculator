@@ -15,16 +15,12 @@ body{
 
 #frame{
     display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    grid-template-rows:[displayStart]2em[displayEnd dividerStart]1em[dividerEnd];
+    grid-template-columns:1fr;
+    grid-template-rows:[displayStart]1fr[displayEnd dividerStart].5fr[dividerEnd buttonStart]1fr[buttonEnd];
     grid-template-areas:
-    "display display display display"
-    "divider divider divider divider"
-    "buttons buttons buttons buttons"
-    "buttons buttons buttons buttons"
-    "buttons buttons buttons buttons"
-    "buttons buttons buttons buttons"
-    "buttons buttons buttons buttons";
+    "display"
+    "divider"
+    "buttons";
     
     background-color:brown;
 }
