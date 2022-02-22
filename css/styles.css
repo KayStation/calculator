@@ -25,7 +25,7 @@ body{
     "buttons buttons buttons buttons"
     "buttons buttons buttons buttons"
     "buttons buttons buttons buttons";
-
+    
     background-color:brown;
 }
 
@@ -36,27 +36,26 @@ body{
 
 #divider{
     grid-area:divider;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     background-color:orange;
+}
+h2{
+    font-size:.5em;
 }
 
 #buttons{
     grid-area:buttons;
-    display: grid;
-    grid-template-columns: [numbersStart] 5em [numbersEnd operatorsStart] 3em [operatorsEnd];
-    grid-template-rows: [buttonsStart] 7em [buttonsEnd];
 }
 
 button{
 }
 
 #numbers{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+
 }
 
 #operators{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+
 }
