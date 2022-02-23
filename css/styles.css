@@ -11,27 +11,26 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+
 }
 
 #frame{
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows:[displayStart]1fr[displayEnd dividerStart].5fr[dividerEnd buttonStart]1fr[buttonEnd];
-    grid-template-areas:
-    "display"
-    "divider"
-    "buttons";
-    
+    display:flex;
+    flex-direction:column;
     background-color:brown;
 }
 
 #display{
-    grid-area:display;
     background-color:black;
+    color:white;
+    text-align:right;
+}
+
+h1{
+    font-size:1em;
 }
 
 #divider{
-    grid-area:divider;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -42,10 +41,15 @@ h2{
 }
 
 #buttons{
-    grid-area:buttons;
+    height:7em;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:repeat(5, 1fr);
 }
 
 button{
+    min-width:3em;
+    font-size:0.5em;
 }
 
 #numbers{
