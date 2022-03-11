@@ -18,6 +18,8 @@ body{
     display:flex;
     flex-direction:column;
     background-color:brown;
+    border:0.1em solid brown;
+
 }
 
 #display{
@@ -52,10 +54,6 @@ button{
     font-size:0.5em;
 }
 
-#numbers{
-
-}
-
-#operators{
-
+button:hover{
+    box-shadow: 0em 0em 1em white;
 }
